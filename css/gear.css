@@ -1,0 +1,134 @@
+/* Created by Zhang Bokun
+ * June/19/2015
+ */
+ 
+@charset "utf-8";
+
+/* Initial css */
+body
+{
+	margin:0 0 0 0;
+	padding: 0 0 0 0;
+	border: 0 0 0 0;
+}
+
+/* gear's div css */
+.sect
+{
+	height: 800px;
+}
+
+/* info css */
+.info
+{
+	padding-top: 100px;
+	font-size:100px;
+	text-align:center;
+	text-shadow: 0 0 3px rgba(255,255,255,1.00);
+}
+
+/* Gear */
+.gear
+{
+	position: fixed;
+	display: block;
+	cursor: pointer;
+	width: 785px;
+	height: 80px;
+	left: 50%;
+	margin-left: -394px;
+	z-index: 1000;
+}
+
+.gear.top-gear
+{
+	background: url(../img/gear.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	
+	-webkit-transition: top 0.5s ease-in-out;
+	-o-transition: top 0.5s ease-in-out;
+	-moz-transition: top 0.5s ease-in-out;
+	-ms-transition: top 0.5s ease-in-out;
+	transition: top 0.5s ease-in-out;
+	
+	top: -40px;
+}
+
+.gear.top-gear:hover
+{
+	background: url(../img/gearHover.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	top: 0px;
+}
+
+.gear.top-gear:active
+{
+	background: url(../img/gearActive.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	top: 0px;
+}
+
+.gear.top-gear.hide
+{
+	top: -80px;
+}
+
+.gear.bottom-gear
+{
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+	
+	background: url(../img/gear.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	
+	-webkit-transition: bottom 0.5s ease-in-out;
+	-o-transition: bottom 0.5s ease-in-out;
+	-moz-transition: bottom 0.5s ease-in-out;
+	-ms-transition: bottom 0.5s ease-in-out;
+	transition: bottom 0.5s ease-in-out;
+	
+	bottom: -40px;
+}
+
+.gear.bottom-gear:hover
+{
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";	
+	
+	background: url(../img/gearHover.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	bottom: 0px;
+}
+
+.gear.bottom-gear:active
+{
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";	
+		
+	background: url(../img/gearActive.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	bottom: 0px;
+}
+
+.gear.bottom-gear.hide
+{
+	bottom: -80px;
+}
