@@ -1,2 +1,2 @@
 # pageSlider
-Help you slide a long long long webiste
+Help you slide a long long long website
